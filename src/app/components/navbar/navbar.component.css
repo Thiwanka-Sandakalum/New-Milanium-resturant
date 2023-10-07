@@ -1,0 +1,17 @@
+
+/* Customize the cart icon color */
+.navbar-nav .nav-link i.bi-cart {
+    color: black; /* Set your desired color */
+}
+
+/* Customize the badge color */
+.navbar-nav .nav-link .badge {
+    background-color: black; /* Set your desired background color */
+    color: white; /* Set your desired text color */
+}
+
+.logo{
+    height:50px;
+    margin: 0%;
+    padding: 0;
+}

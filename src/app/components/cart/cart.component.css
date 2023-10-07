@@ -1,0 +1,17 @@
+/* cart.component.css */
+.container {
+    margin-top: 20px;
+}
+
+.card {
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    margin-top: 10px;
+}
+
+
+.hover-dark:hover {
+    color: #343a40; /* Change this to your desired darker color */
+  }

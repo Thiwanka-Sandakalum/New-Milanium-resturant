@@ -1,0 +1,54 @@
+.card-img-top{
+    height: auto;
+    width: 100px;
+}
+
+.row{
+    margin: 100px;
+}
+
+h1{
+    padding: 5px;
+}
+
+/* Add a background image to the specified div */
+.heading {
+    background-image: url('/assets/img/cook.jpg');
+    background-size: cover; /* Adjust as needed */
+    background-position: center center; /* Adjust as needed */
+    background-repeat: no-repeat;
+    color: #fff; /* Set text color for better visibility */
+}
+
+/* Default font size */
+.card-text {
+    font-size: 16px;
+}
+
+/* Adjust font size for small screens */
+@media (max-width: 576px) {
+    .card-text {
+        font-size: 14px;
+    }
+}
+
+/* Adjust font size for medium screens */
+@media (min-width: 576px) and (max-width: 768px) {
+    .card-text {
+        font-size: 15px;
+    }
+}
+
+/* Adjust font size for large screens */
+@media (min-width: 768px) and (max-width: 992px) {
+    .card-text {
+        font-size: 16px;
+    }
+}
+
+/* Adjust font size for extra-large screens */
+@media (min-width: 992px) {
+    .card-text {
+        font-size: 18px;
+    }
+}

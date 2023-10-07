@@ -1,0 +1,13 @@
+/* menu.component.css */
+.card {
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.Menu-Image {
+  height: auto;
+  width: 250px;
+}

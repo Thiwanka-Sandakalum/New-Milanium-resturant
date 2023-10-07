@@ -1,0 +1,37 @@
+<!-- add-cart.component.html -->
+<div class="overlay">
+    <div class="container mt-4">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-8 col-sm-10">
+                <div class="card">
+                    <div class="card-header">
+                               <!-- Close Icon -->
+                               <i class="bi bi-x-circle float-end close-icon" (click)="closeAddCart()"></i>
+                        <h2 class="card-title">{{ menu.Name }}</h2>
+                        <p class="card-text">{{ menu.Description }}</p>
+                    </div>
+                    <div class="card-body">
+                        <!-- Menu Image -->
+                        <!-- <img [src]="menu.img" class="img-fluid" alt="Menu Image"> -->
+                        <img src="/assets/img/menu.jpg" class="img-fluid mb-3 Menu-Image">
+                        
+                        <!-- Quantity Selection -->
+                        <div class="mb-3">
+                            <label for="quantity" class="form-label">Quantity:</label>
+                            <select id="quantity" [(ngModel)]="selectedQuantity" (ngModelChange)="updateTotal()"
+                                class="form-select">
+                                <option *ngFor="let quantity of quantities" [value]="quantity">{{ quantity }}</option>
+                            </select>
+                        </div>
+
+                        <!-- Total -->
+                        <h4>Total: ${{ Total }}</h4>
+
+                        <!-- Add to Cart Button -->
+                        <button class="btn btn-danger" (click)="addToCart()">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
