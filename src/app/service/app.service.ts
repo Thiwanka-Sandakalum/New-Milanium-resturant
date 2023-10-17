@@ -7,7 +7,7 @@ import { catchError, tap } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class appService {
-  private url = 'https://restaurant-milanium.azurewebsites.net';
+  private url = 'https://backenddd.azurewebsites.net';
   private cart: any[] = [];
   cartUpdated = new EventEmitter<void>();
 
